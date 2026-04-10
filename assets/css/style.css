@@ -1,66 +1,102 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
+/* RESET BÁSICO */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Estilo del encabezado */
-header{
-    background-color: #195fc95d;
+/* ESTILOS GENERALES */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #0d6efd, #0a58ca);
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 40px 20px;
 }
 
-/* Estilo de la nav */
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* NAV */
 nav {
-    background-color: #f2f2f2;
+    background-color: #222;
     padding: 10px;
-    text-align: center;
 }
 
 nav ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
-    margin: 0%;
-    padding: 0%;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #333;
-    padding: 5px;
+    font-weight: bold;
 }
 
-/* Estilo del contenido principal */
+nav ul li a:hover {
+    color: #0d6efd;
+}
+
+/* MAIN */
 main {
+    max-width: 900px;
+    margin: auto;
     padding: 20px;
 }
 
-/* Estilo secciones */
+/* SECCIONES */
 section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 section h2 {
-    color: #195fc95d;
+    margin-bottom: 10px;
+    color: #0d6efd;
 }
 
+/* TARJETAS DE PROYECTO */
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
+/* LISTAS */
+ul {
+    margin-left: 20px;
+}
 
-
-
-
-
-/* Estilo de pie de pagina */
+/* FOOTER */
 footer {
-    background-color: #24069d93;
-    color: #fff;
-    padding: 10px;
+    background-color: #0a58ca;
+    color: white;
     text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
