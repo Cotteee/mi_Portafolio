@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+/* SCROLL SUAVE */
+html {
+    scroll-behavior: smooth;
+}
+
 /* ESTILOS GENERALES */
 body {
     font-family: Arial, sans-serif;
@@ -59,7 +64,7 @@ main {
 
 /* SECCIONES */
 section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 section h2 {
@@ -74,11 +79,39 @@ section h2 {
     border-radius: 10px;
     margin-top: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* BOTONES DE PROYECTOS */
+.project a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background: #0d6efd;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.project a:hover {
+    background: #0a58ca;
 }
 
 /* LISTAS */
 ul {
     margin-left: 20px;
+}
+
+/* TITULOS */
+h1, h2, h3 {
+    font-weight: 600;
 }
 
 /* FOOTER */
@@ -98,5 +131,13 @@ footer {
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    header {
+        padding: 30px 10px;
     }
 }
